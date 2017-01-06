@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="engine" class="com.apress.isf.java.service.SearchEngineService">
+	<bean id="engine" class="com.apress.isf.spring.service.SearchEngineService">
 	      <property name="documentDAO" ref="documentDAO" />
 	 </bean>
 	 
@@ -56,7 +56,7 @@
 		<property name="extension" value=".pdf" />
 	</bean>
 	
-	<bean id="notType" class="com.apress.isf.java.model.Type">
+	<bean id="noteType" class="com.apress.isf.java.model.Type">
 		<property name="name" value="NOTE" />
 		<property name="desc" value="Text Notes" />
 		<property name="extension" value=".txt" />

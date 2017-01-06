@@ -14,6 +14,7 @@ import com.apress.isf.java.model.Document;
 import com.apress.isf.java.model.Type;
 import com.apress.isf.java.service.SearchEngine;
 
+
 public class MyDocumentsWithSpringTest {
 	
 	private ClassPathXmlApplicationContext context;

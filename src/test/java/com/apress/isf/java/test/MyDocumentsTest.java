@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 
 import com.apress.isf.java.model.Document;
 import com.apress.isf.java.model.Type;
-import com.apress.isf.java.service.MySearchEngine;
-import com.apress.isf.java.service.SearchEngine;
+import com.apress.isf.spring.service.MySearchEngine;
+import com.apress.isf.spring.service.SearchEngine;
 
 
 public class MyDocumentsTest {
