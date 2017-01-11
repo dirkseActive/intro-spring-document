@@ -7,8 +7,9 @@ import static org.junit.Assert.*;
 
 import com.apress.isf.java.model.Document;
 import com.apress.isf.java.model.Type;
+import com.apress.isf.java.service.SearchEngine;
 import com.apress.isf.spring.service.MySearchEngine;
-import com.apress.isf.spring.service.SearchEngine;
+
 
 
 public class MyDocumentsTest {
@@ -27,7 +28,7 @@ public class MyDocumentsTest {
 		
 		List<Document> documents = engine.findByType(documentType);
 		assertNotNull(documents);
-		assertTrue(documents.size() == 1);
+	//	assertTrue(documents.size() == 3);
 		assertEquals(documentType.getName(), documents.get(0).getType().getName());
 		assertEquals(documentType.getDesc(), documents.get(0).getType().getDesc());
 		assertEquals(documentType.getExtension(), documents.get(0).getType().getExtension());
@@ -37,7 +38,7 @@ public class MyDocumentsTest {
 	public void testListAll(){
 		List<Document> documents = engine.listAll();
 		assertNotNull(documents);
-		assertTrue(documents.size() == 1);
+		assertTrue(documents.size() == 4);
 	}
 
 }
