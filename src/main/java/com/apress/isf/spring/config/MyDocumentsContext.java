@@ -1,5 +1,11 @@
 package com.apress.isf.spring.config;
 
+/**
+ * 1/16/2016
+ * Written to be tested with MyDocumentsBeanConfigurationTest
+ * 
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 
