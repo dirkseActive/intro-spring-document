@@ -8,5 +8,6 @@ package com.apress.isf.spring.test;
  */
 
 public class MyDocumentsBeanDefinitionReaderTest {
+	
 
 }
