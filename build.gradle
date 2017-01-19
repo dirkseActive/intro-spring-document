@@ -16,6 +16,8 @@ dependencies {
     compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.2.0'
     compile 'org.springframework:spring-context:4.0.5.RELEASE'
 
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
     testCompile 'junit:junit:4.12'
 }
 
