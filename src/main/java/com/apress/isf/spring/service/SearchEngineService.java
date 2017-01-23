@@ -29,9 +29,10 @@ public class SearchEngineService implements SearchEngine {
 	}
 	
 	public void setDocumentDAO(DocumentDAO documentDAO){
-		this.documentDAO = documentDAO;
 		if(log.isDebugEnabled())
 			log.debug("Document DAO set:  " + documentDAO);
+		
+		this.documentDAO = documentDAO;
 	}
 	
 	public List<Document> findByType(Type documentType) {
