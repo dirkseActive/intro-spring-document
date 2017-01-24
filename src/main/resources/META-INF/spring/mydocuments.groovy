@@ -3,11 +3,14 @@ import com.apress.isf.spring.data.DocumentRepository
 import com.apress.isf.java.model.Document
 
 beans {
-	engine(SearchEngineService){
+
+	engine(SearchEngineService){ bean ->
+			bean.scope = "prototype"
 		documentDAO = ref("documentDAO")
 		}
-	}
-documentDAO(DocumentRepository){
+		
+documentDAO(DocumentRepository){ bean ->
+	bean.scope = "prototype"
 	doc1 = ref("doc1")
 	doc2 = ref("doc2")
 	doc3 = ref("doc3")
@@ -55,5 +58,4 @@ noteType(com.apress.isf.java.model.Type){
 	desc = "Text Notes"
 	extension = ".txt"
 }
-
 }
